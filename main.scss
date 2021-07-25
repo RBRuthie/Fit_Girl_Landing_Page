@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+//  font-family: 'Roboto Slab', serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+// font-family: 'Patua One', cursive;
+
+$white: #ffffff;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+:root{
+  --main-radius: 5px;
+  --main-padding: 5px;
+
+}
+
+body{
+  font-size: 2rem;
+}
+
+.container{
+  max-width: 100%;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .2fr 1.8fr 1fr;
+  // craete values for each element
+  grid-template-areas: 
+  "nav nav nav nav"
+  "main main main main" 
+  "BookInfo BookInfo BookInfo BookInfo";
+
+  nav{
+    background: #16BAC5;
+    color: $white;
+    grid-area: nav;
+    padding: 50px 100px;
+    font-family: 'Roboto Slab', serif;
+      .nav-left{
+        float: left;
+        li{
+          margin: 0 0 0 -20px;
+        }
+      }
+      .nav-right{
+        float: right;
+        li{
+          font-size: 1.2rem;
+        }
+      }
+      ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        img{
+          width: 27%;
+          height: auto;
+          margin: -11px 0 0 0;
+        }
+        li{
+          a{
+            color: $white;
+            text-decoration: none;
+          }
+        }
+      }
+  }
+
+  #main{
+    background: #16BAC5;
+    grid-area:main;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    font-family: 'Roboto Slab', serif;
+
+    // align-items: center;
+  }
+
+  
+  #BookInfo{
+    background: $white;
+    grid-area:BookInfo;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+   
+
+  }
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 600px){
+  .container{
+    // for one column wide
+    grid-template-columns: 1fr;
+    // create 7 rows(one per element}
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    // redefine the area based on elments stack up
+    grid-template-areas: 
+    "nav"
+    "main"
+    "BookInfo"
+
+    ;
+
+
+      
+  }
+}
+
