@@ -1,5 +1,5 @@
-#### FIT GIRL
-#### Landing page for a free Fitness E-Book. Created with HTML - SCSS
+#### FIT GIRL LANDING PAGE
+#### Created Mock-up and Landing page for a free Fitness E-Book. Utilized with PHOTOSHOP - HTML - SCSS
 <table>
   <tr>
     <td>Free E-Book Mock-Up</td>

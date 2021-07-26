@@ -1,11 +1,16 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+// font-family: 'Oswald', sans-serif;
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 //  font-family: 'Roboto Slab', serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
-// font-family: 'Patua One', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+// font-family: 'Open Sans', sans-serif;
+
 
 $white: #ffffff;
+$black: #000000;
 
 *{
   margin: 0;
@@ -14,14 +19,10 @@ $white: #ffffff;
   font-family: 'Roboto Slab', serif;
 }
 
-:root{
-  --main-radius: 5px;
-  --main-padding: 5px;
-
-}
 
 body{
   font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container{
@@ -29,79 +30,217 @@ body{
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: .2fr 1.8fr 1fr;
+  grid-template-rows: .2fr 1.8fr .2fr 1fr;
   // craete values for each element
   grid-template-areas: 
   "nav nav nav nav"
   "main main main main" 
+  "header header header header"
   "BookInfo BookInfo BookInfo BookInfo";
 
-  nav{
-    background: #16BAC5;
-    color: $white;
-    grid-area: nav;
-    padding: 50px 100px;
-    font-family: 'Roboto Slab', serif;
-      .nav-left{
-        float: left;
-        li{
-          margin: 0 0 0 -20px;
-        }
-      }
-      .nav-right{
-        float: right;
-        li{
-          font-size: 1.2rem;
-        }
-      }
-      ul{
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        img{
-          width: 27%;
-          height: auto;
-          margin: -11px 0 0 0;
-        }
-        li{
-          a{
-            color: $white;
-            text-decoration: none;
+    nav{
+      background: #ee7b58;
+      // background: #16BAC5;
+      height: 100%;
+      color: $white;
+      grid-area: nav;
+      padding: 50px 150px;
+      margin: -35px 0 -52px 0;
+      font-family: 'Roboto Slab', serif;
+        .nav-left{
+          float: left;
+          li{
+            margin: 0px 0 0 0px;
           }
         }
+        .nav-right{
+          float: right;
+          li{
+            font-size: 1.5rem;
+            margin-top: 15px;
+          }
+        }
+        ul{
+          display: flex;
+          justify-content: space-between;
+          list-style: none;
+          img{
+            width: 27%;
+            height: auto;
+            margin: -9px 0 0 0;
+          }
+          li{
+            a{
+              color: $white;
+              text-decoration: none;
+            }
+          }
+        }
+    }
+
+    #main{
+      background: #ee7b58;
+      grid-area:main;
+      display: flex;
+      justify-content: space-between;
+      padding: 50px 150px;
+      color: $white;
+        .main-leftside{
+          width: 60%;
+          font-size: 1.5rem;
+          h1{
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            font-weight: 300;
+            padding: 20px 0 20px 0 ;
+          }
+          p{
+            font-size: 2.1rem;
+            font-weight: 900;
+          }
+          h5{
+            
+            font-weight: 300;
+            padding: 40px 0 20px 0;
+          }
+    
+        }
+
+        .main-form{
+          width: 22%;
+          height: 100%;
+          font-size: 1.5rem;
+          background-color: $white;
+          color: $black;
+            .form{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+            .header h1{
+              font-family: 'Oswald', sans-serif;
+              font-size: 2.5rem;
+              font-weight: 300;
+              padding: 15px;
+            }
+            .input-group {
+              width: 100%;
+              max-width: 246px;
+              display: flex;
+              flex-direction: column;
+              margin-top: 10px;
+              }
+              .form-label{
+                font-size: .9rem;
+                font-weight: 500;
+                color: gray;
+              }
+              .form-input {
+                padding: 9px;
+                font-size: .9rem;
+                border: 1px solid #a8aaa6;
+                border-radius: 8px;
+              }
+              ::placeholder {
+                color: rgb(166, 166, 168);
+                font-size: .8em;
+              }
+              .check-box{
+                font-size: .6rem;
+                margin: -10px 0 25px 0px;
+              }
+              #btn{
+                width: 50%;
+                height: 44px;
+                background: #21304F;
+                border-radius: 8px;
+                border: 2px solid #21304F;
+                font-size: .8rem;
+                font-weight: bold;
+                color: $white;
+                padding: 12px 0 0 22px;
+                margin: 17px;
+                cursor: pointer;
+                text-transform: uppercase;
+                word-spacing: 8px;
+                
+              }
+              .button {
+                font: bold 11px Arial;
+                text-decoration: none;
+                background-color: #EEEEEE;
+                color: #333333;
+                padding: 2px 6px 2px 6px;
+                border-top: 1px solid #CCCCCC;
+                border-right: 1px solid #333333;
+                border-bottom: 1px solid #333333;
+                border-left: 1px solid #CCCCCC;
+              }
+        }
+    }
+
+    #header{
+      // padding: 50px 150px;
+      width: 100%;
+      grid-area: header;
+      font-size: 1.1rem;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin: 30px 0 30px 185px;
+      padding: 0px;
+    }
+    
+     #BookInfo{
+      position: relative;
+      background: $white;
+      grid-area:BookInfo;
+      width: 100%;
+      height: 55%;
+      padding: 50px 150px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-direction: row;
+      .book-cover{
+        width: 100%;
+        height: auto;
       }
-  }
+      .book-details{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 9px;
+      .plans{
+        width: 20%;
+        height: auto;
+        margin-bottom: 5px;
+      }
+      h1{
+        font-size: 1.3rem;
+        // margin-top: 10px;
+      }
+      h2{
+        width: 67%;
+        margin-left: 73px;
+        text-align: center;
+        font-size: 1rem;
+        color: grey;
+      }
 
-  #main{
-    background: #16BAC5;
-    grid-area:main;
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 100px;
-    font-family: 'Roboto Slab', serif;
-
-    // align-items: center;
+      }
+    }
+   
   }
 
   
-  #BookInfo{
-    background: $white;
-    grid-area:BookInfo;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: space-between;
-   
-
-  }
+ 
 
 
 
 
-}
-
-
-
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
   .container{
     // for one column wide
     grid-template-columns: 1fr;
@@ -112,11 +251,8 @@ body{
     "nav"
     "main"
     "BookInfo"
-
     ;
-
-
-      
+ 
   }
 }
 
