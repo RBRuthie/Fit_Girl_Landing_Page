@@ -6,7 +6,7 @@
      <td>Free E-Book Mock-Up</td>
   </tr>
   <tr>
-    <td><img src="img/MOCKUP-4.png" width=500 ></td>
-    <td><img src="img/MOCKUP-3.png" width=500 ></td>
+    <td><img src="img/MOCK-UP4.png" width=500 ></td>
+    <td><img src="img/MOCK-UP3.png" width=500 ></td>
   </tr>
  </table>
