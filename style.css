@@ -1,0 +1,404 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ /* font-family: 'Roboto Slab', serif; */
+
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ font-family: 'Roboto Condensed', sans-serif;
+ color: #333;
+}
+h1, h2, h3, h4, h5, p{
+ margin: 0;
+}
+a{
+ text-decoration: none;
+ color:white; 
+ font-weight: 900;
+ font-size: 1.4rem;
+}
+a:hover{
+ color: #7d0dfd;
+ text-decoration: underline;
+ cursor:pointer; 
+}
+ul{
+ list-style: none;
+}
+
+/* 
+max-width: 1100px; done so  container content will remain within 1100px. When screen is widen/stretched
+margin: 0 auto; keep contianer content center
+*/
+.container{
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 0 40px;
+}
+
+
+/*********************
+     NAV BAR
+**********************/
+
+.navbar{
+ padding-top: 20px;
+ padding-right: 16px;
+ font-size: 1.2rem;
+ background-color: #16BAC5;
+}
+.navbar .container{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+}
+/* move right hand side to the right */
+.navbar .nav{
+ justify-self: flex-end;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.navbar  .logo{
+ font-family: 'Oswald', sans-serif;
+ color:white; 
+ font-weight: 900;
+ font-size: 2rem;
+ font-weight: 700;
+ text-transform: uppercase;
+}
+/* target links to seperate right side elements */
+.navbar .nav a{
+ padding: 0 1rem;
+ font-size: 15px;
+}
+
+
+/***********************
+     SECTION - B
+************************/
+
+/*  adding position: relative so incase we want to move/position any child elements */
+.section-b{
+ position: relative;
+ height: 530px;
+ background-color: #16BAC5;
+ color: #ffffff;
+}
+.section-b-text{
+height: 90%;
+}
+.section-b-text h1{
+ padding-top: 5px;
+ font-family: 'Oswald', sans-serif;
+ font-size: 2rem;
+ font-weight: 300;
+}
+.section-b-text p{
+ padding-bottom: 25px;
+ font-family: 'Oswald', sans-serif;
+ font-size: 3.6rem;
+ font-weight: 900;
+ line-height: 1.2; 
+ text-transform: uppercase;
+}
+.section-b-text h2{
+ font-family: 'Roboto Slab', serif; 
+ padding-top: 5px;
+ font-size: 1.1rem;
+ font-weight: 300;
+}
+
+.section-b .container{
+ display: grid;
+ grid-template-columns: 55% 44%;
+ gap: 25px;
+ height: 100%;
+ justify-content: center;
+ align-items: center; 
+}
+.section-b-form{
+ position: relative;
+ top: 0px;
+ left: 40px;
+ height: 404px;
+ width: 345px;
+ padding: 20px;
+ margin: -27px 10px 10px 10px;
+ border-radius: 10px;
+ color: rgb(0, 0, 0);
+ background-color: #ffffff;
+}
+.section-b-form .title{
+ font-family: 'Oswald', sans-serif;
+ text-align: center;
+ font-size: 1.8rem;
+ padding: 0px 0 14px 0;
+}
+.input-container input[type='text'],
+.input-container input[type='email'],
+.input-container input[type='tel']
+{
+ display: block;
+ width: 79%;
+ border-radius: 7px;
+ border: 1px solid #acacac;
+ padding: 10px;
+ margin-bottom: 16px;
+ font-size: 15px;
+ margin-left: 29px;
+ cursor: pointer;
+}
+label{
+ display: block;
+ margin-bottom: 0.1rem;
+ margin-left: 2rem;
+ font-size: 0.9rem;
+}
+::placeholder {
+ color: rgb(166, 166, 168);
+ font-size: .8em;
+}
+#download-btn{
+ display: block;
+ width: 79%;
+ background:  #234579;
+ color: white;
+ font-weight: 700;
+ border: none;
+ padding: .8rem;
+ border-radius: 8px;
+ font-size: .8rem;
+ text-transform: uppercase;
+ word-spacing: 7px;
+ margin-left: 28px;
+}
+#download-btn:hover{
+ background: #797777;
+ cursor: pointer;
+}
+.checkbox-container{
+ font-size: .8rem;
+ padding: 15px;
+}
+
+
+/***********************
+     SECTION - C
+************************/
+.section-c{
+ width: 100%;
+ min-height: 50px;
+ position: relative;
+ padding: 20px;
+}
+.section-c .container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.section-c h2{
+ font-size: 30px;
+ height: 100%;
+}
+
+
+/***********************
+     SECTION - D
+************************/
+.section-d {
+ position: relative;
+ width: 100%;
+}
+.section-d h2{
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: auto;
+ max-width: 860px;
+ padding: 54px 252px 0 0;
+ font-family: 'Oswald', sans-serif;
+ font-weight: 300;
+ font-size: 25px;
+}
+.section-d .container {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-gap: 1rem;
+ justify-content: center;
+ align-items: center;
+}
+.section-d, .food-testi{
+ justify-content: center;
+}
+.section-d .food-meal,.food-meal,.food-exer,.food-testi{
+ width: 100%;
+ text-align: center;
+}
+.section-d h3{
+ margin-top: 0.7rem;
+ margin-bottom: 0.7rem;
+}
+.section-d h3, p{
+ width: 100%;
+ font-size: 18px;
+}
+.book-img{
+ width: 100%;
+ margin: -37px 0 54px -10px;
+}
+
+
+
+
+
+/***********************
+     MEDIA QUERIES
+************************/
+
+@media (max-width: 770px) {
+.section-b .container,
+.section-c .container,
+.section-d .container
+{
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+text-align: center;
+}
+.section-b {
+height: 100%;
+}
+.section-b-text {
+margin: 30px 0 0 0;
+}
+.section-b-text p {
+padding-top: 6px;
+padding-bottom: 25px;
+/* font-size: 4rem; */
+}
+.section-b-form {
+position: relative;
+top: -25px;
+left: 94px;
+height: 404px;
+width: 445px;
+margin: 40px 20px;
+}
+.book-img{
+width: 30%;
+margin: 27px 0 38px 233px;
+}
+.section-d .food-meal,.food-meal,.food-exer,.food-testi{
+margin: 0 0 38px 0;
+}
+
+
+}
+
+@media screen and (max-width: 499px) and (min-width: 400px){
+
+ .navbar .nav a {
+ font-size: 11px;
+ }
+ .navbar .container {
+ padding: 0 16px 0 19px;
+ }
+ .section-b {
+ height: 100%;
+ }
+ .section-b-text  h2 {
+ font-size: 19px;
+ width: 295px;
+ margin: 0 0 0 25px;
+ }
+ .section-b-form {
+ position: relative;
+ width: 310px;
+ top: 0px;
+ left: 1px;
+ margin: 25px 20px 49px 20px;
+ }
+ .checkbox-container {
+ font-size: .8rem;
+ padding: 13px 48px 0 0;
+ width: 250px;
+ }
+ .section-c h2 {
+ font-size: 30px;
+ height: 100%;
+ padding-top: 30px;
+ }
+ .book-img{
+ width: 90%;
+ margin: 27px 0 38px 18px;
+ }
+ .section-d .food-meal,.food-meal,.food-exer,.food-testi{
+ margin: 0 0 38px 0;
+ }
+ 
+}
+
+@media screen and (max-width: 399px) and (min-width: 300px){
+
+.navbar .nav a {
+font-size: 11px;
+}
+.navbar .container {
+padding: 0 16px 0 19px;
+}
+.section-b {
+height: 100%;
+}
+.section-b-text  h2 {
+font-size: 19px;
+width: 295px;
+margin: 0 0 0 25px;
+}
+.section-b-form {
+position: relative;
+width: 310px;
+top: 0px;
+left: 1px;
+margin: 25px 20px 49px 20px;
+}
+.checkbox-container {
+font-size: .8rem;
+padding: 13px 48px 0 0;
+width: 250px;
+}
+.section-c h2 {
+font-size: 30px;
+height: 100%;
+padding-top: 30px;
+}
+.book-img{
+width: 90%;
+margin: 27px 0 38px 18px;
+}
+.section-d .food-meal,.food-meal,.food-exer,.food-testi{
+margin: 0 0 38px 0;
+}
+
+}
+
+
+
+/* 
+    when debugging css use this:
+     *{
+       border: 1px solid red;
+     }
+*/
