@@ -3,7 +3,6 @@
 <table>
   <tr>
     <td>Free E-Book Mock-Up</td>
-     <td>Free E-Book Mock-Up</td>
   <tr>
     <td>
     <img src="img/mockup-blue.png" width=500 >
