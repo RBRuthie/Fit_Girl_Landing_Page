@@ -247,6 +247,7 @@ label{
 .section-d .food-meal,.food-meal,.food-exer,.food-testi{
  width: 100%;
  text-align: center;
+ padding: 0 0 4px 0;
 }
 .section-d h3{
  margin-top: 0.7rem;
@@ -256,10 +257,14 @@ label{
  width: 100%;
  font-size: 18px;
 }
-.book-img{
- width: 100%;
- margin: -37px 0 54px -10px;
+.section-d .book-img{
+max-width: 100%;
+width: 100%;
+height: auto !important;
+ 
+ margin: -106px 0 48px -5px;
 }
+
 
 
 
@@ -268,6 +273,34 @@ label{
 /***********************
      MEDIA QUERIES
 ************************/
+
+@media (max-width: 1024px){
+
+.section-c h2 {
+     font-size: 25px;
+}
+.section-d .book-img {
+margin: -97px 0 4px -5px;
+}
+
+.section-d .food-meal,.food-meal,.food-exer,.food-testi{
+margin: 0 0 -59px 0;
+}
+
+.section-d .fa-4x {
+font-size: 2.5em;
+}
+
+.section-d h3{
+font-size: 18px;
+}
+
+.section-d p{
+font-size: 16px;
+}
+
+
+}
 
 @media (max-width: 770px) {
 .section-b .container,
@@ -297,7 +330,7 @@ height: 404px;
 width: 445px;
 margin: 40px 20px;
 }
-.book-img{
+.section-d  .book-img{
 width: 30%;
 margin: 27px 0 38px 233px;
 }
@@ -341,7 +374,7 @@ margin: 0 0 38px 0;
  height: 100%;
  padding-top: 30px;
  }
- .book-img{
+ .section-d  .book-img{
  width: 69%;
  margin: 27px 0 38px 53px;
  }
@@ -384,9 +417,10 @@ font-size: 30px;
 height: 100%;
 padding-top: 30px;
 }
-.book-img{
+.section-d .book-img{
 width: 76%;
 margin: 27px 0 38px 36px;
+
 }
 .section-d .food-meal,.food-meal,.food-exer,.food-testi{
 margin: 0 0 38px 0;
