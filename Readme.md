@@ -6,7 +6,14 @@
      <td>Free E-Book Mock-Up</td>
   </tr>
   <tr>
-    <td><img src="img/MOCK-UP4.png" width=500 ></td>
-    <td><img src="img/MOCK-UP3.png" width=500 ></td>
+    <td>
+    <img src="https://github.com/RBRuthie/Fit_Girl_Landing_Page/blob/main/img/MOCK-UP4.png?raw=true" width=500 >
+    </td>
+    <td>
+    <img src="https://github.com/RBRuthie/Fit_Girl_Landing_Page/blob/main/img/MOCK-UP3.png?raw=true" width=500 >
+    </td>
   </tr>
  </table>
+
+
+
