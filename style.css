@@ -341,7 +341,7 @@ margin: 0 0 38px 0;
 
 }
 
-@media screen and (max-width: 499px) and (min-width: 400px){
+@media screen and (max-width: 499px) and (min-width: 375px){
 
  .navbar .nav a {
  font-size: 11px;
@@ -384,50 +384,49 @@ margin: 0 0 38px 0;
  
 }
 
-@media screen and (max-width: 399px) and (min-width: 300px){
-body{
+@media screen and (max-width: 374px) and (min-width: 300px){
+.container{
 width: 100%;
-}
-.navbar .nav a {
-font-size: 11px;
 }
 .navbar .container {
 padding: 0 16px 0 19px;
 }
-.section-b p{
-font-size: 2.9rem;
-padding: 0 20px 0 20px;
-margin: 11px 0 14px 0;
+.navbar .nav a {
+padding: 0;
+font-size: 11px;
 }
-.section-b-text  h2 {
-font-size: 19px;
-width: 295px;
-margin: 0 0 0 25px;
+.section-b-text p {
+padding-top: 15px;
+padding-bottom: 29px;
+font-size: 3rem;
 }
-.section-b-form {
+.section-b-text h2{
+padding: 0 10px 0 10px;
+}
+.section-b-form{
 position: relative;
-width: 310px;
-top: 0px;
-left: 1px;
-margin: 25px 20px 49px 20px;
+top: -25px;
+left: 0px;
+height: 404px;
+width: 261px;
+margin: 40px 20px;
+}
+.section-b-form form{
+width: 124%;
+margin: 0 0 0 -28px;
+}
+.section-b-form .title{
+font-size: 25px;
+}
+#download-btn {
+font-size: .6rem;
 }
 .checkbox-container {
-font-size: .8rem;
-padding: 13px 48px 0 0;
-width: 250px;
-}
-.section-c h2 {
-font-size: 30px;
-height: 100%;
-padding-top: 30px;
+padding: 21px 39px 0 0;
 }
 .section-d .book-img{
-width: 76%;
-margin: 27px 0 38px 36px;
-
-}
-.section-d .food-meal,.food-meal,.food-exer,.food-testi{
-margin: 0 0 38px 0;
+width: 80%;
+margin: 27px 0 38px 31px;
 }
 
 }
